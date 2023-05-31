@@ -32,8 +32,8 @@ const Detail = ({exericiseDetail}) => {
           of the best <br /> exercises to target your {exericiseDetail.target}. It will help you improve your{' '}
           <br /> mood and gain energy.
         </Typography>
-        { extraDetail?.map((item) => (
-          <Stack key={item.name} direction="row" gap="24px" alignItems="center">
+        { extraDetail?.map((item,index) => (
+          <Stack key={index} direction="row" gap="24px" alignItems="center">
             <Button sx={{ background: '#FFF2DB', borderRadius: '50%', width: '100px', height: '100px' }}>
               <img src={item.icon} alt={exericiseDetail.bodyPart} style={{ width: '50px', height: '50px' }} />
             </Button>

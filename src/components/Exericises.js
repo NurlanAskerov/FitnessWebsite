@@ -41,8 +41,8 @@ const Exericises = ({ bodyPart, setExericises, exericises }) => {
         Showing results
       </Typography>
       <Stack direction="row" flexWrap="wrap" gap="10px" justifyContent="center">
-        {currentExericises.map((exericise) => (
-          <ExericiseCard key={exericise.id} exericise={exericise} />
+        {currentExericises.map((exericise,index) => (
+          <ExericiseCard key={index} exericise={exericise} />
         ))}
       </Stack>
       <Stack alignItems="center" mt='60px'>

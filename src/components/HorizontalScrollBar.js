@@ -6,9 +6,9 @@ function HorizontalScrollBar({ data, setBodyPart, bodyPart }) {
   return (
     
     <div id="slider" style={{ display: 'flex', flexWrap:'nowrap' ,marginX:'auto',overflowX:'scroll',paddingBottom:'10px',behaviour:'smooth'}}>
-      {data.map((item) => (
+      {data.map((item,index) => (
         <Box
-          key={item.id || item}
+          key={index}
           title={item.id || item}
           m="0 20px"
         ><a href="/#exericises" style={{textDecoration:'none'}}>
